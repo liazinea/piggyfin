@@ -1,0 +1,25 @@
+@import url(../../styles/index.scss);
+
+.centralizaLogo{
+    display: flex;
+
+    .fundo{
+        text-align: center;
+        background-color: #F2E5F3;
+        height: 25vh;
+        width: 100%;
+        line-height: 25vh;
+
+    .img{
+        
+        width: 79px;
+    }
+    .titulo{
+        line-height: 5.5vh;
+        color: #95729C;
+        font-size: 64px;
+        font-weight: 700;
+
+    }
+}
+}

@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../../components/Navbar'
 
 const PerfilUsuario = () => {
   return (
-    <div>PerfilUsuario</div>
+    <div>
+      <Navbar/>
+    </div>
   )
 }
 
