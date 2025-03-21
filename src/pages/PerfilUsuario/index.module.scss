@@ -1,0 +1,25 @@
+@import url(../../styles/index.scss);
+
+*{
+    background-color: #F2E5F3;
+}
+.titulo{
+    color: #260C35;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 50px;
+}
+.inputs{
+    display: flex;
+    justify-content: space-around;
+    margin-inline: 10%;
+}
+.dados{
+    text-align: center;
+    margin: 5%;
+    color: #64496A;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}

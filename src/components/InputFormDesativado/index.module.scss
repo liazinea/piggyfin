@@ -1,0 +1,23 @@
+@import url(../../styles/index.scss);
+
+.label{
+    display: flex;
+    color:#64496A;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.input{
+    background-color: #B492B5;
+    border: 1px #64496A solid;
+    border-radius: 100px;
+    width: 350px;
+    height: 25px;
+    color: #260C35;
+}::placeholder {
+    text-align: center;
+    color: #64496A;
+ }
+ .input:focus{
+outline: #260C35 solid 1px;
+ }
+  
