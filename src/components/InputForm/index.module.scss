@@ -1,12 +1,17 @@
 @import url(../../styles/index.scss);
 
-.label{
+.fundo{
+    background-color: #B492B5;
+    .label{
     display: flex;
     color:#64496A;
     font-weight: 700;
     margin-bottom: 15px;
+    background-color: #B492B5
+
 }
 .input{
+    appearance: none;
     background-color: #F2E5F3;
     border: 1px #64496A solid;
     border-radius: 100px;
@@ -16,9 +21,20 @@
     color: #B492B5;
 }::placeholder {
     text-align: center;
-    color: #64496A;
+    color: #B492B5;
+    background-color: #F2E5F3
  }
  .input:focus{
 outline: #260C35 solid 1px;
  }
+ .input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+.input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+}
   
