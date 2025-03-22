@@ -1,9 +1,35 @@
 @import '../../styles/index.scss';
 
 .principal{
-    background-color: $fundo-tabela-escuro;
+    background-color: $fundo-tabela-claro;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
     
     .icone{
         padding: 20px;
+        display: flex;
+        align-items: center;
+
+        .iconeTexto{
+            font-size: 32px;
+            padding-left: 15px;
+            color: $texto-footer;
+        }
+    }
+    .contato{
+        display: flex;
+        font-size: 32px;
+        gap: 20px;
+        align-items: center;
+        color: $texto-footer;
+
+        .lista{
+            padding-inline: 20px;
+            .listaItem{
+                font-size: 20px;
+                list-style: none;
+            }
+        }
     }
 }

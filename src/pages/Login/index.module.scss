@@ -11,85 +11,80 @@
     justify-content: center;  
     align-items: center;
     gap: 10%;
+
+  .painelEsquerdo{
+      padding-left: 0 30%;
+
+        .logo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: transparent;
+            
+            .piggyFin{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center; 
+                
+                h1{
+                    font-size: 100px;
+                    color: $fundo-tabela-escuro;
+                }
+            }
+            
+            .texto{
+                width: 65%;
+                padding-left: 5%;
+                
+                .slogan{
+                    font-size: 36px;
+                    color: $preto;
+                }
+            }
+        }
+
   }
-
-  .painelEsquerdo, .paineDireito{
-    padding-left: 0 30%; 
-  }
-
-
-.piggyFin{
+  .painelDireito{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center; 
-
-}
-
-h1{
-    font-size: 100px;
-    color: $fundo-tabela-escuro;
-}
-
-
-.slogan{
-    font-size: 36px;
-    color: $preto;
-}
-
-.texto{
-    width: 65%;
-    padding-left: 5%;
-
-}
-
-.logo{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: transparent;
-}
-
-.painelDireito{
+    padding-left: 0 30%; 
     background-color: $fundo-tabela-claro;
     width: 1100px;
     height: 683px;
     border-radius: 100px 0 0 100px;
-
-}
-
-
-.caixaLogin{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 15%;
-}
-
-h2{
-    font-size: 36px;
-    color: $cor-texto;
-    margin-top: 10%;
-    font-weight: bold;
-}
-
-
-.forms{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 16px;
-}
-label{
     
-    font-weight: bold;
-    margin-top: 50px;
-}
+    .caixaLogin{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 15%;
+        
+        h2{
+            font-size: 36px;
+            color: $cor-texto;
+            font-weight: bold;
+        }
+        
+        .forms{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 16px;
+            
+            label{
+                font-weight: bold;
+                margin-top: 20px;
+            }
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            gap: 40%;
+            margin-left: 10%;
+            margin-top: 50px;
+        }
+    }
+  }
 
-.btn{
-    display: flex;
-    justify-content: center;
-    gap: 40%;
-    margin-left: 10%;
-    margin-top: 50px;
 }

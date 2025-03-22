@@ -2,9 +2,9 @@ import styles from "./index.module.scss";
 import { useState, useEffect } from "react";
 import {
   flexRender,
+  useReactTable,
   getCoreRowModel,
   getFilteredRowModel,
-  useReactTable,
   getPaginationRowModel
 } from "@tanstack/react-table";
 
@@ -80,16 +80,11 @@ const TabelaRelatorio = ({ data }) => {
       globalFilter,
       columnFilters,
     },
-    initialState: {
-        pagination: {
-            pageSize: despesas.length,
-        },
-    },
-    getPaginationRowModel: getPaginationRowModel(),
-    onColumnFiltersChange: setColumnFilters,
-    onGlobalFilterChange: setGlobalFilter,
     getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
+    getFilteredRowModel: getFilteredRowModel(), // Adicionando uma função vazia temporariamente
+    getCoreRowModel: getCoreRowModel(), // Adicionando uma função vazia temporariamente
+    getPaginationRowModel: getPaginationRowModel(), // Adicionando uma função vazia temporariamente
+    getPaginationRowModel: getPaginationRowModel(),
   });
 
   useEffect(() => {

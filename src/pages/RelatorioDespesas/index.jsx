@@ -1,8 +1,12 @@
 import styles from "./index.module.scss";
 import TabelaRelatorio from "../../components/TabelaRelatorio";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const RelatorioDespesas = () => {
   return (
+    <div>
+      <Navbar/>
     <div className={styles.principal}>
       <h1 className={styles.titulo}>Relatório de despesas</h1>
       <div className={styles.tabela}>
@@ -155,6 +159,8 @@ const RelatorioDespesas = () => {
           ]}
         />
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

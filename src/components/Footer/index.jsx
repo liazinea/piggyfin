@@ -8,6 +8,7 @@ const Footer = () => {
             <p className={styles.iconeTexto}>PiggyFin</p>
         </div>
         <div className={styles.contato}>
+          <p>Contatos:</p>
             <ul className={styles.lista}>
                 <li className={styles.listaItem}>Telefone: (11) 4002-8922</li>
                 <li className={styles.listaItem}>Celular: (11) 91234-5678</li>
