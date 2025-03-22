@@ -3,16 +3,18 @@ import axios from "axios";
 import api from "../services/api";
 import { data } from "react-router-dom";
 
-const useCategorias = () => {
-    const [categorias, setCategorias] = useState([]);
+const useUsuario = (email) => {
+    const [usuario, setUsuario] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const fetchCategorias = async () => {
+    const fetchUsuario = async () => {
+        console.log(email)
         setLoading(true);
         try {
-            const response = await api.get("/categoria");
-            setCategorias(response.data.categorias);
+            const response = await api.get(`/usuario/${localStorage.getItem('email')}`);
+            console.log(response)
+            setUsuario(response.data.categorias);
         } catch (err) {
             setError(err.message);
         } finally {
@@ -21,10 +23,10 @@ const useCategorias = () => {
     };
 
     useEffect(() => {
-        fetchCategorias();
+        fetchUsuario();
     }, []);
 
-    return { categorias, loading, error};
+    return { usuario, loading, error};
 };
 
-export default useCategorias;
+export default useUsuario;

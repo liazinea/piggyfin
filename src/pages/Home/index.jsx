@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  console.log(localStorage.getItem('token'))
   return (
     <div>
       <Navbar />

@@ -51,30 +51,30 @@ const CadastroUsuario = () => {
               tipo="text"
               placeholder="Insira seu nome"
               label="Nome:"
-              {...register("usu_nome", { required: true })}
+              {...register("name", { required: true })}
             />
-            {errors.usu_nome && <p>Nome é obrigatório</p>}
+            {errors.uname && <p>Nome é obrigatório</p>}
             <InputForm
               tipo="email"
               placeholder="Insira seu e-mail"
               label="E-mail:"
-              {...register("usu_email", { required: true })}
+              {...register("email", { required: true })}
             />
-            {errors.usu_email && <p>Email é obrigatório</p>}
+            {errors.email && <p>Email é obrigatório</p>}
             <InputForm
               tipo="password"
               placeholder="Utilize caracteres especiais"
               label="Senha:"
-              {...register("usu_senha", { required: true })}
+              {...register("password", { required: true })}
             />
-            {errors.usu_senha && <p>Senha é obrigatório</p>}
+            {errors.password && <p>Senha é obrigatório</p>}
             <InputForm
               tipo="password"
               placeholder="Digite novamente sua Senha"
               label="Confirme sua Senha:"
               {...register("usu_senha", { required: true })}
             />
-            {errors.usu_senha && <p>Senha é obrigatório</p>}
+            {errors.password && <p>Senha é obrigatório</p>}
           </div>
           <div className={styles.btn}>
             <BotaoForm className={styles.btn} texto={"Cadastrar"} />
