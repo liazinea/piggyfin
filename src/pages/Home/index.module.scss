@@ -1,0 +1,32 @@
+@import '../../styles/index.scss';
+
+.principal{
+    background-color: $fundo-roxo-claro;
+    
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        padding: 90px;
+        .card{
+            padding: 30px;
+            width: 30%;
+            border: 1px $cor-texto solid;
+            border-radius: 20px;
+            background-color: $fundo-card;
+            text-decoration: none;
+
+            h2{
+                font-size: 32px;
+                font-weight: 400;
+                color: $cor-texto;
+            }
+            p{
+                color: $cor-texto;
+            }
+        }
+    }
+
+}

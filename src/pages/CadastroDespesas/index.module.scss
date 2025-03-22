@@ -3,44 +3,49 @@
 .principal {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
   .card {
     background-color: #b492b5;
     border: #260c35 solid 1px;
     padding-inline: 2%;
     padding-block: 5%;
     border-radius: 50px;
-  }
-  .alinha {
-    background-color: #b492b5;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 7%;
-    gap: 5px;
-    .fundo {
+    .btn {
+      display: flex;
+      justify-content: center;
+    }
+    .alinha {
       background-color: #b492b5;
-      .label {
-        display: flex;
-        color: #64496a;
-        font-weight: 700;
-        margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 7%;
+      gap: 5px;
+      .fundo {
         background-color: #b492b5;
-      }
-      .input {
-        padding: 5px 0;
-        background-color: #f2e5f3;
-        border: 1px #64496a solid;
-        border-radius: 100px;
-        font-weight: 400;
-        width: 360px;
-        color: #64496a;
-      }
-      .placeholder {
-        text-align: center;
-        background-color: #f2e5f3;
-        font-weight: 400;
-      }
-      .input:focus {
-        outline: #260c35 solid 1px;
+        .label {
+          display: flex;
+          color: #64496a;
+          font-weight: 700;
+          margin-bottom: 15px;
+          background-color: #b492b5;
+        }
+        .input {
+          padding: 5px 0;
+          background-color: #f2e5f3;
+          border: 1px #64496a solid;
+          border-radius: 100px;
+          font-weight: 400;
+          width: 360px;
+          color: #64496a;
+        }
+        .placeholder {
+          text-align: center;
+          background-color: #f2e5f3;
+          font-weight: 400;
+        }
+        .input:focus {
+          outline: #260c35 solid 1px;
+        }
       }
     }
   }
