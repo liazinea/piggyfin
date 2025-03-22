@@ -1,0 +1,30 @@
+@import '../../styles/index.scss';
+
+.label {
+    display: flex;
+    color: $cor-texto;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.input {
+    background-color: $fundo-roxo-claro;
+    border: 1px $cor-texto solid;
+    border-radius: 100px;
+    font-weight: 400;
+    width: 510px;
+    height: 60px;
+    color: $cor-texto;
+    font-size: 24px;
+    padding-left: 50px;
+}
+
+::placeholder {
+    text-align: left;
+    color: $fundo-tabela-claro;
+    font-style: italic;
+}
+
+.input:focus {
+    outline: $fundo-roxo-claro solid 1px;
+}
