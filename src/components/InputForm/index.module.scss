@@ -3,7 +3,7 @@
 .fundo{
     background-color: #B492B5;
     .label{
-    display: flex;
+    display: flex; 
     color:#64496A;
     font-weight: 700;
     margin-bottom: 15px;
@@ -11,6 +11,7 @@
 
 }
 .input{
+    padding: 5px;
     appearance: none;
     background-color: #F2E5F3;
     border: 1px #64496A solid;

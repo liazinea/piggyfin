@@ -1,0 +1,28 @@
+@import '../../styles/index.scss';
+
+.btn{
+  background-color: $fundo-roxo-claro;
+  color: $cor-texto;
+  font-size: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 175px; 
+  height: 60px; 
+  border: solid $cor-texto 2px;
+  margin-left: 20px;
+  margin-top: 10%;
+
+
+  &:hover {
+    font-style: italic;
+    border: solid $fundo-tabela-escuro 2px;
+    text-decoration: underline;
+    color: $fundo-tabela-escuro;
+  }
+}
