@@ -1,0 +1,67 @@
+@import "../../styles/index.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .colunas {
+    background-color: $fundo-roxo-claro;
+    color: $cor-texto;
+    padding: 5px;
+    border: 1px $cor-texto solid;
+    border-radius: 25px;
+    text-align: center;
+    .data{
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        &:focus{
+            outline: none;
+        }
+        option{
+            background-color: $fundo-roxo-claro;
+        }
+    }
+  }
+}
+.celulas {
+  border-radius: 20px;
+  overflow: hidden;
+
+  .celula {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 5px;
+  }
+}
+.claro {
+  background-color: $fundo-tabela-claro;
+}
+.escuro {
+  background-color: $fundo-tabela-escuro;
+}
+
+.botao{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+    button{
+        padding: 5px 10px;
+        border-radius: 50%;
+        margin-top: 20px;
+        ::before{
+            outline: 1px $cor-texto solid;
+            color: $cor-texto;
+        }
+        
+        :disabled{
+            color: $fundo-tabela-claro;
+            outline: 1px $fundo-tabela-claro solid;
+            
+        }
+    }
+}
