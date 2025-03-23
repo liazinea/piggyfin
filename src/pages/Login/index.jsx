@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import { useAuth } from '../../context/AuthContext';
 import InputLogin from '../../components/InputLogin';
 import BotaoForm from '../../components/BotaoForm';
+import Botao from '../../components/Botao'
 import { useForm } from 'react-hook-form';
 import {
     useNavigate
@@ -69,7 +70,11 @@ const Login = () => {
                     </div>
                     <div className={styles.btn}>
                         <BotaoForm className={styles.btn} texto={"Entrar"} />
-                        <BotaoForm className={styles.btn} texto={"Cadastrar"} />
+                        <Botao 
+                            className={styles.btn} 
+                            texto={"Cadastrar"} 
+                            onClick={() => navigate('/cadastro-usuario')} 
+                        />
                     </div>
                 </form>
             </div>
